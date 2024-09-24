@@ -1,59 +1,74 @@
 # CalFit
 
-Calfit é um projeto desenvolvido em Laravel 11 com PHP 8.3, focado em ajudar os usuários a calcular seu Gasto Energético Total (GET), Índice de Massa Corporal (IMC) e a montar dietas personalizadas. 
+CalFit is a project developed with Laravel 11 and PHP 8.3, focused on helping users calculate their Total Energy Expenditure (TEE), Body Mass Index (BMI), and create personalized diets.
 
-## Funcionalidades
+## Features
 
-- Cálculo do Gasto Energético Total (GET)
-- Cálculo do Índice de Massa Corporal (IMC)
-- Criação de dietas personalizadas baseadas no GET
+- Calculation of Total Energy Expenditure (TEE)
+- Calculation of Body Mass Index (BMI)
+- Creation of personalized diets based on TEE (Available soon)
 
-## Setup 
+## Screenshots
+<img src="screenshot.png" alt="screenshot">
+<img src="screenshot2.png" alt="screenshot">
+<img src="screenshot3.png" alt="screenshot">
+<img src="screenshot4.png" alt="screenshot">
 
-### Passo a passo
-Clone Repositório
-```sh
+## Setup
+Step-by-Step Guide
+
+Clone the Repository
+
+```bash
 git clone https://github.com/k4ik/CalFit.git
 ```
-```sh
+
+Navigate to the Project Directory
+
+```bash
 cd CalFit
 ```
 
-Suba os containers do projeto
-```sh
+Start the Project Containers
+
+```bash
 docker-compose up -d
 ```
 
-Crie o Arquivo .env
-```sh
+Create the .env File
+
+```bash
 cp .env.example .env
 ```
 
-Acesse o container app
-```sh
+Access the App Container
+
+```bash
 docker-compose exec app bash
 ```
 
+Install Project Dependencies
 
-Instale as dependências do projeto
-```sh
+```bash
 composer install
 ```
 
-Gere a key do projeto Laravel
-```sh
+Generate the Laravel Project Key
+
+```bash
 php artisan key:generate
 ```
 
-OPCIONAL: Gere o banco SQLite (caso não use o banco MySQL)
-```sh
+OPTIONAL: Generate SQLite Database (if not using MySQL)
+
+```bash
 touch database/database.sqlite
 ```
 
-Rodar as migrations
-```sh
+Run Migrations
+
+```bash
 php artisan migrate
 ```
 
-Acesse o projeto
-[http://localhost:8000](http://localhost:8000)
+Access the Project Visit http://localhost:8000
